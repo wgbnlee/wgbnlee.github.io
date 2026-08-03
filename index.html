@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will Lee — Software Engineer</title>
+<meta name="description" content="Will Lee, Software Engineer Graduate. Full-stack projects including WYKSync, an esports tournament and broadcast management platform.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sync-bar" aria-hidden="true"><span class="sync-dot"></span></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="mark">WL<span class="mark-dot">.</span></a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/wgbnlee" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap" id="top">
+    <p class="eyebrow">Software Engineer Graduate</p>
+    <h1>Will Lee builds the<br>systems behind the <span class="accent">broadcast</span>.</h1>
+    <p class="hero-lede">Full-stack engineer focused on tools that run live under pressure — tournament brackets, broadcast overlays, real-time state that can't afford to lag.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#work">See the work</a>
+      <a class="btn btn-ghost" href="mailto:wgbnlee@gmail.com">wgbnlee@gmail.com</a>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section class="work wrap" id="work">
+    <div class="section-head">
+      <p class="eyebrow">Featured build</p>
+      <h2>Projects</h2>
+    </div>
+
+    <article class="project-card">
+      <div class="project-top">
+        <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+        <h3>WYKSync</h3>
+      </div>
+      <p class="project-desc">A full-stack esports tournament and broadcast management platform. Handles live bracket state and pulls match data straight from the game client, so tournament organizers and broadcast operators are always working from the same source of truth.</p>
+
+      <ul class="stack">
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>CSS</li>
+        <li>Overwolf API</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://wyksync.vercel.app/" target="_blank" rel="noopener">Live site ↗</a>
+        <a href="https://setprojectday.ca/post/2026/wyksync/" target="_blank" rel="noopener">Project details ↗</a>
+        <a href="https://www.youtube.com/watch?v=U25vTirUzlo" target="_blank" rel="noopener">Demo video ↗</a>
+        <a href="https://setprojectday.ca/2026/WYKSync.pdf" target="_blank" rel="noopener">Brochure (PDF) ↗</a>
+      </div>
+    </article>
+
+    <article class="project-card project-card-empty">
+      <h3>More from school</h3>
+      <p class="project-desc">Earlier coursework projects are being added here. Check back soon, or see everything on <a href="https://github.com/wgbnlee" target="_blank" rel="noopener">GitHub</a> in the meantime.</p>
+    </article>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section class="contact wrap" id="contact">
+    <div class="section-head">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Let's talk</h2>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-item" href="mailto:wgbnlee@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">wgbnlee@gmail.com</span>
+      </a>
+      <a class="contact-item" href="https://www.linkedin.com/in/will-lee-ca/" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">will-lee-ca</span>
+      </a>
+      <a class="contact-item" href="https://github.com/wgbnlee" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">wgbnlee</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <span>Will Lee</span>
+  <span id="year"></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
