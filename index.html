@@ -33,44 +33,53 @@
     <p class="hero-lede">Full-stack engineer focused on tools that run live under pressure — tournament brackets, broadcast overlays, real-time state that can't afford to lag.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#work">See the work</a>
+      <a class="btn btn-ghost" href="mailto:wgbnlee@gmail.com">wgbnlee@gmail.com</a>
     </div>
   </section>
 
   <div class="divider" aria-hidden="true"></div>
 
-  <section class="work wrap" id="work">
-    <div class="section-head">
+  <section class="work" id="work">
+    <div class="wrap section-head">
       <p class="eyebrow">Featured build</p>
       <h2>Projects</h2>
     </div>
 
-    <article class="project-card">
-      <div class="project-top">
-        <div class="live-badge"><span class="live-dot"></span>LIVE</div>
-        <h3>WYKSync</h3>
+    <div class="slider">
+      <button class="slider-arrow slider-arrow-left" type="button" aria-label="Previous project" disabled>‹</button>
+
+      <div class="slider-track" id="sliderTrack" tabindex="0">
+        <article class="project-card">
+          <div class="project-top">
+            <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+            <h3>WYKSync</h3>
+          </div>
+          <p class="project-desc">A full-stack esports tournament and broadcast management platform. Handles live bracket state and pulls match data straight from the game client, so tournament organizers and broadcast operators are always working from the same source of truth.</p>
+
+          <ul class="stack">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>CSS</li>
+            <li>Overwolf API</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://wyksync.vercel.app/" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://setprojectday.ca/post/2026/wyksync/" target="_blank" rel="noopener">Project details ↗</a>
+            <a href="https://www.youtube.com/watch?v=U25vTirUzlo" target="_blank" rel="noopener">Demo video ↗</a>
+            <a href="https://setprojectday.ca/2026/WYKSync.pdf" target="_blank" rel="noopener">Brochure (PDF) ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card-empty">
+          <h3>More from school</h3>
+          <p class="project-desc">Earlier coursework projects are being added here. Check back soon, or see everything on <a href="https://github.com/wgbnlee" target="_blank" rel="noopener">GitHub</a> in the meantime.</p>
+        </article>
       </div>
-      <p class="project-desc">A full-stack esports tournament and broadcast management platform. Handles live bracket state and pulls match data straight from the game client, so tournament organizers and broadcast operators are always working from the same source of truth.</p>
 
-      <ul class="stack">
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>CSS</li>
-        <li>Overwolf API</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://wyksync.vercel.app/" target="_blank" rel="noopener">Live site ↗</a>
-        <a href="https://setprojectday.ca/post/2026/wyksync/" target="_blank" rel="noopener">Project details ↗</a>
-        <a href="https://www.youtube.com/watch?v=U25vTirUzlo" target="_blank" rel="noopener">Demo video ↗</a>
-        <a href="https://setprojectday.ca/2026/WYKSync.pdf" target="_blank" rel="noopener">Brochure (PDF) ↗</a>
-      </div>
-    </article>
-
-    <article class="project-card project-card-empty">
-      <h3>More from school</h3>
-      <p class="project-desc">Earlier coursework projects are being added here. Check back soon, or see everything on <a href="https://github.com/wgbnlee" target="_blank" rel="noopener">GitHub</a> in the meantime.</p>
-    </article>
+      <button class="slider-arrow slider-arrow-right" type="button" aria-label="Next project">›</button>
+    </div>
   </section>
 
   <div class="divider" aria-hidden="true"></div>
