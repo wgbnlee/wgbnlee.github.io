@@ -25,10 +25,11 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .wrap {
-  max-width: 760px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -172,11 +173,7 @@ button:focus-visible {
   margin: 0 auto;
 }
 
-.work {
-  padding: 64px 0;
-}
-
-.contact {
+.work, .contact {
   padding: 64px 24px;
 }
 
@@ -193,10 +190,26 @@ button:focus-visible {
   background: var(--bg-raised);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 32px;
-  width: min(560px, 82vw);
+  padding: 24px;
+  width: calc((100% - 40px) / 3);
   flex-shrink: 0;
   scroll-snap-align: start;
+}
+
+.project-thumb {
+  margin: -24px -24px 16px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  background: #fff;
+  padding: 24px;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .project-top {
@@ -293,9 +306,6 @@ button:focus-visible {
 
 .slider {
   position: relative;
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 24px;
 }
 
 .slider-track {
@@ -338,8 +348,8 @@ button:focus-visible {
   transition: border-color 0.12s ease, color 0.12s ease, opacity 0.12s ease;
 }
 
-.slider-arrow-left { left: -8px; }
-.slider-arrow-right { right: -8px; }
+.slider-arrow-left { left: -56px; }
+.slider-arrow-right { right: -56px; }
 
 .slider-arrow:hover:not(:disabled) {
   border-color: var(--accent);
@@ -353,7 +363,7 @@ button:focus-visible {
 
 @media (max-width: 700px) {
   .slider-arrow { display: none; }
-  .slider { padding: 0 20px; }
+  .project-card { width: 82vw; }
 }
 
 .contact-grid {
